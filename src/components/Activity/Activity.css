@@ -1,14 +1,14 @@
 .activity{
-    width: 300px;
-    height: 510px;
+    width: 265px;
+    height: 400px;
     border: 1px solid #95A0A7;
     position: relative;
     border-radius: 8px;
 }
 
 .activity img{
-    width: 286px;
-    height: 286px;
+    width: 250px;
+    height: 250px;
     border-radius: 8px;
     margin: 7px;
 }
@@ -37,7 +37,7 @@
 
 .btn-cart{
     width: 100%;
-    background-color: #FFE0B3;
+    background-color: #6b0b75;
     border: none;
     border-radius: 0px 0px 8px 8px;
     position: absolute;
@@ -49,8 +49,10 @@
 
 .btn-cart .btn-text {
     margin-right: 5px;
+    color: white;
+    font-weight: 700;
 }
 
 .btn-cart:hover{
-    background-color: orange;
+    background-color: rgb(53, 1, 44);
 }

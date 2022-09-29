@@ -8,7 +8,7 @@ const Activity = (props) => {
             <img src={img} alt=""/>
             <div className='activity-info'>
                 <p className='activity-name'>{name}</p>
-                <p>Time required: {time}</p>
+                <p>Duration: {time}min</p>
             </div>
             <button className='btn-cart'>
                 <p className='btn-text'>Add to List</p>
