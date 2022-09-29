@@ -9,3 +9,13 @@
     gap: 30px;
     margin: 100px 50px;
 }
+
+.record-container{
+    background-color: rgba(165, 209, 245, 0.3);
+}
+
+@media screen and (max-width:600px){
+    .activities-container{
+        grid-template-columns: repeat(1, 1fr);;
+    }
+}

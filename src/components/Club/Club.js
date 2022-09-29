@@ -5,12 +5,15 @@ import './Club.css';
 
 const Club = () => {
     const[activities,setActivities]=useState([]);
-    
+    const [record,setRecord]=useState([]);
+
     useEffect( ()=>{
         fetch('MOCK_DATA.json')
         .then(res=>res.json())
         .then(data=>setActivities(data))
     } ,[])
+
+    // useEffect( ()=>{} ,[])
 
     return (
         <div className='club-container'>
@@ -24,7 +27,7 @@ const Club = () => {
            </div>
            <div className='record-container'>
                {/* <Cart cart={cart}></Cart> */}
-               <Record></Record>
+               <Record record={record}></Record>
            </div>
         </div>
     );
