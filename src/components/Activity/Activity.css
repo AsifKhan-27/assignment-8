@@ -35,7 +35,7 @@
     margin-top: 7px;
 }
 
-.btn-cart{
+.btn-add{
     width: 100%;
     background-color: #6b0b75;
     border: none;
@@ -47,12 +47,12 @@
     justify-content: center;
 }
 
-.btn-cart .btn-text {
+.btn-add .btn-add-text {
     margin-right: 5px;
     color: white;
     font-weight: 700;
 }
 
-.btn-cart:hover{
+.btn-add:hover{
     background-color: rgb(53, 1, 44);
 }
