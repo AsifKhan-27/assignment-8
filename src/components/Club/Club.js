@@ -15,6 +15,11 @@ const Club = () => {
 
     // useEffect( ()=>{} ,[])
 
+    const handleAddToList=(activity)=>{
+        // record.push(activity);
+        const newRecord=[...record,activity];
+        setRecord(newRecord);
+    }
     return (
         <div className='club-container'>
            <div className='activities-container'>
@@ -22,11 +27,11 @@ const Club = () => {
                    activities.map(activity=><Activity
                      key={activity.id} 
                      activity={activity}
+                     handleAddToList={handleAddToList}
                      ></Activity>)
                }
            </div>
            <div className='record-container'>
-               {/* <Cart cart={cart}></Cart> */}
                <Record record={record}></Record>
            </div>
         </div>

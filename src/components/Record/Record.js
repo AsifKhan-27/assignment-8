@@ -1,7 +1,13 @@
 import React from 'react';
 import './Record.css';
 
-const Record = () => {
+const Record = (props) => {
+    const{record}=props;
+    let movieTime=0;
+    let breakTime=0;
+    for(const activity of record){
+        movieTime=movieTime+parseInt(activity.time);
+    }
     return (
         <div className='record'>
             <div className='user-details'>
@@ -26,8 +32,8 @@ const Record = () => {
             </div>
             <div className='activity-details'>
                 <h3>Movie Details</h3>
-                <p>Movie Time: min</p>
-                <p>Break Time: min</p>
+                <p>Movie Time: {movieTime}min</p>
+                <p>Break Time: {breakTime}min</p>
             </div>
             <button className='btn-completed'>
                 <p className='btn-completed-text'>Activity Completed</p>
