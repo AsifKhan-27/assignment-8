@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Record.css';
 
 const Record = (props) => {
@@ -8,24 +8,37 @@ const Record = (props) => {
     for(const activity of record){
         movieTime=movieTime+parseInt(activity.time);
     }
+    const[brek,setBrek]=useState(0);
+    const addBreak10=()=>{
+        setBrek(10);
+    }
+    const addBreak20=()=>{
+        setBrek(20);
+    }
+    const addBreak30=()=>{
+        setBrek(30);
+    }
+    const addBreak40=()=>{
+        setBrek(40);
+    }
     return (
         <div className='record'>
             <div className='user-details'>
                 <h3>Nucky Thompson</h3>
             </div>
             <div className='break'>
-                <h3>Add a Break</h3>
+                <h3>Add a Break in minutes</h3>
                 <div className='break-btns'>
-                    <button className='btn-break'>
+                    <button onClick={addBreak10} className='btn-break'>
                         <p className='btn-break-text'>10</p>
                     </button>
-                    <button className='btn-break'>
+                    <button onClick={addBreak20} className='btn-break'>
                         <p className='btn-break-text'>20</p>
                     </button>
-                    <button className='btn-break'>
+                    <button onClick={addBreak30} className='btn-break'>
                         <p className='btn-break-text'>30</p>
                     </button>
-                    <button className='btn-break'>
+                    <button onClick={addBreak40} className='btn-break'>
                         <p className='btn-break-text'>40</p>
                     </button>
                 </div>
@@ -33,7 +46,7 @@ const Record = (props) => {
             <div className='activity-details'>
                 <h3>Movie Details</h3>
                 <p>Movie Time: {movieTime}min</p>
-                <p>Break Time: {breakTime}min</p>
+                <p>Break Time: {brek}min</p>
             </div>
             <button className='btn-completed'>
                 <p className='btn-completed-text'>Activity Completed</p>
