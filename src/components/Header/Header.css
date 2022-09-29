@@ -1,9 +1,10 @@
 .header{
     height: 60px;
-    background-color: #0a5180;
+    width: 100%;
+    background-color: #020d14;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
     padding-left: 140px;
     padding-right: 140px;
 }
@@ -14,4 +15,8 @@
     font-size: 24px;
     font-weight: 800;
     margin-left: 36px;   
+}
+
+.logo{
+    height: 50px;
 }
