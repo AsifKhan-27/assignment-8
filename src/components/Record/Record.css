@@ -50,8 +50,8 @@
     background-color: #6b0b75;
     border: none;
     border-radius: 5px;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     display: flex;
     align-items: center;
     justify-content: center;
