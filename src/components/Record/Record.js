@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './Record.css';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// toast.configure()
 
 const Record = (props) => {
     const{record}=props;
@@ -20,6 +24,9 @@ const Record = (props) => {
     }
     const addBreak40=()=>{
         setBrek(40);
+    }
+    const notify=()=>{
+        alert('Congratulations on completion !')
     }
     return (
         <div className='record'>
@@ -48,7 +55,7 @@ const Record = (props) => {
                 <p>Movie Time: {movieTime}min</p>
                 <p>Break Time: {brek}min</p>
             </div>
-            <button className='btn-completed'>
+            <button onClick={notify} className='btn-completed'>
                 <p className='btn-completed-text'>Activity Completed</p>
             </button>
         </div>

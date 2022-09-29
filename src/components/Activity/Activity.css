@@ -1,14 +1,14 @@
 .activity{
-    width: 265px;
-    height: 400px;
+    width: 13.563rem;
+    height: 25rem;
     border: 1px solid #95A0A7;
     position: relative;
     border-radius: 8px;
 }
 
 .activity img{
-    width: 250px;
-    height: 250px;
+    width: 12.625rem;
+    height: 15.625rem;
     border-radius: 8px;
     margin: 7px;
 }
